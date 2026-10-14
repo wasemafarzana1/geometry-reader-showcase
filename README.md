@@ -15,7 +15,7 @@ In Bangladesh, the best tutoring and learning resources are concentrated among D
 | 1 · Foundation Runway | Angles on a line and at a point | Drags a ray and watches the two angles always sum to 180°, then expands it into a full 360° turn. |
 | 2 · Vector Railways | Parallel lines and triangles | Tilts a line crossing two parallel rails and lights up the Z, F, C and X angle patterns; reshapes a triangle and sees the outside angle equal the two opposite inside ones. |
 | 3 · Polygon Factory | Interior and exterior angles | Changes the number of sides from 3 to 10, splits the shape into triangles, and walks around its edge to watch the turns add up to 360°. |
-| 4 · Circle Laws | All seven circle theorems | Slides points round a circle and watches each theorem hold. |
+| 4 · Circle Laws | All seven circle theorems | Slides points round a circle and watches each theorem hold, then watches four of them *proved* step by step. |
 | 5 · 3D Spatial Matrix | Solids, nets and scale | Unfolds four solids into flat nets and scales them up to see lengths grow ×k, areas ×k² and volumes ×k³. |
 
 <table>
@@ -48,7 +48,7 @@ The reasoning behind each choice is recorded in the **[decision log](DECISIONS.m
 The goal is complete coverage of school geometry, from the idea of a point to O-Level and then college level. The **[curriculum map](CURRICULUM.md)** tracks every topic and its status.
 
 1. **Now:** English version on the O-Level syllabus, refined with English-medium and English Version students.
-   - **Visual proofs:** the learner *watches* why each theorem holds, as parts of the figure fold, swing and slide into place. The first one is live: the angle at the centre.
+   - **Visual proofs:** the learner *watches* why each theorem holds, as parts of the figure fold, swing and slide into place. Four are live: the angle at the centre, the angle in a semicircle, angles in the same segment, and the cyclic quadrilateral.
    - **Then:** a Foundations lab (point, line, angle, shapes), a Quadrilateral Family lab, and 2D mensuration with every formula derived on screen.
 2. **Next:** match every lab to the national SSC/HSC (NCTB) syllabus, and release a full Bangla version.
 3. **Then:** college-level topics, and further "Readers" for other areas of mathematics.

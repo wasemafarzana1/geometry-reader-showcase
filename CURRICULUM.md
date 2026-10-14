@@ -63,9 +63,9 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
 |---|---|---|---|---|---|---|
 | E1 | Parts of a circle: radius, diameter, chord, arc, sector, segment, tangent | 6–7 | A1 | Partial (glossary only) | — | — |
 | E2 | Angle at the centre is twice the angle at the circumference | 9–10 | C4, E1 | Built | **Built** (visual proof) | 4 · Circle Laws |
-| E3 | Angles in the same segment are equal | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
-| E4 | Angle in a semicircle is 90° | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
-| E5 | Opposite angles of a cyclic quadrilateral sum to 180° | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
+| E3 | Angles in the same segment are equal | 9–10 | E2 | Built | **Built** (visual proof) | 4 · Circle Laws |
+| E4 | Angle in a semicircle is 90° | 9–10 | E2 | Built | **Built** (visual proof) | 4 · Circle Laws |
+| E5 | Opposite angles of a cyclic quadrilateral sum to 180° | 9–10 | E2 | Built | **Built** (visual proof) | 4 · Circle Laws |
 | E6 | Tangent is perpendicular to the radius | 9–10 | E1 | Built | Planned | 4 · Circle Laws |
 | E7 | Two tangents from an external point are equal | 9–10 | E6, C7 | Built | Planned | 4 · Circle Laws |
 | E8 | Alternate segment theorem | 10 | E2, E6 | Built | Planned | 4 · Circle Laws |
@@ -142,7 +142,7 @@ Counting the 65 topics in sections A–L:
 | Partial | 6 |
 | Planned | 40 |
 
-Visual proofs (D-020, D-023): **1 built** (E2, angle at the centre). E3, E4 and E5 follow directly from it; their own visual proofs are next.
+Visual proofs (D-020, D-023): **4 built**: E2 (angle at the centre), E3 (same segment), E4 (semicircle) and E5 (cyclic quadrilateral). Next candidates: E6–E8, the remaining circle theorems, and C2/C3, the triangle angle sum and exterior angle.
 
 ## Syllabus mapping (to verify)
 Add one row per topic once checked against the official documents:

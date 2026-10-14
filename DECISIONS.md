@@ -201,3 +201,10 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Alternatives considered:** O-Level-style statement-and-reason lines; both formats side by side.
 - **Reasoning:** "The learner must not just wonder how did this happen, they must see and watch how it happened actually through visualisation." The aim is in-depth understanding of the topic, not a particular curriculum's style of answer (D-012). (author)
 - **Consequences:** Every proof needs a visual mechanism, not just text. Proofs stay live, so if the learner drags the figure, the same argument replays on the new shape. The first proof built is the angle at the centre, chosen because three other circle theorems follow from it.
+
+## D-024 · Lab badges describe the topic, not an exam
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The Circle Laws badge changed from "A* Exam Engine" to "Circle Theorems".
+- **Reasoning:** It is consistent with topics first (D-012) and with curriculum-neutral proofs (D-023). The product teaches the topic itself, not one exam's grade.
+- **Consequences:** New labs are labelled by grade range and topic.

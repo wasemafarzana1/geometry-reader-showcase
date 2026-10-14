@@ -208,3 +208,21 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Decision:** The Circle Laws badge changed from "A* Exam Engine" to "Circle Theorems".
 - **Reasoning:** It is consistent with topics first (D-012) and with curriculum-neutral proofs (D-023). The product teaches the topic itself, not one exam's grade.
 - **Consequences:** New labs are labelled by grade range and topic.
+
+## D-025 · Foundations lab: seven stations for Grade 6
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, built at the author's request; details pending author review
+- **Decision:** One lab, placed first in the navigation, with seven stations matching curriculum topics A1–A7. Each station pairs a hands-on figure with paired vocabulary (D-003) and an everyday-objects card (D-022).
+- **Pending author review:**
+  1. **Everyday examples.** These are AI-drafted, and some were chosen to be familiar in Bangladesh: a samosa, a carrom board, a paper kite (ghuri), the national flag. Replace any that do not fit your students.
+  2. **Emoji or illustrations.** Everyday objects are currently shown with emoji. Purpose-made illustrations or photographs would be clearer and more culturally specific, but they need design work or a budget.
+  3. **The trapezium definition.** The shape sorter calls a four-sided shape with *exactly one* pair of parallel sides a trapezium. Some curricula use "at least one pair", which also counts parallelograms. Match this to the curriculum you teach.
+  4. **Lab names.** "Foundations" (Lab 1) and "Foundation Runway" (Lab 2) sound alike. Consider renaming one.
+- **Consequences:** Topics A1–A7 are now built (see [CURRICULUM.md](CURRICULUM.md)).
+
+## D-026 · Counting faces, edges and vertices on curved solids
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, pending author review
+- **Decision:** Curved surfaces are counted as faces, and listed separately from flat faces. Circular rims count as edges. The tip of a cone counts as a vertex. Cylinder: 2 flat + 1 curved face, 2 edges, 0 vertices. Cone: 1 flat + 1 curved, 1 edge, 1 vertex. Sphere: 1 curved surface, 0 edges, 0 vertices.
+- **Reasoning:** This is the most common school convention, but textbooks disagree. Some say a cone has no vertex, or that only flat surfaces count as faces. The lab therefore keeps Euler's pattern to flat-faced solids only.
+- **Consequences:** If the author's curriculum uses another convention, change the counts in `src/labs/foundations/Solids3D.jsx`.

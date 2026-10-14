@@ -10,6 +10,7 @@ This project was built with substantial help from an AI coding assistant (Claude
 - Set up the split between the private source repository and the public showcase repository, which holds the documents, screenshots and built demo.
 - Drafted `CURRICULUM.md` (the topic list, grade placements and prerequisites) for the author to correct, and wrote up the author's reasoning in `DECISIONS.md` from the author's own statements.
 - Built the visual proofs in the Circle Laws lab (`Watch why it's true`): angle at the centre, angle in a semicircle, angles in the same segment and the cyclic quadrilateral, plus a shared proof kit. This follows the author's direction that proofs must be watched, not read.
+- Built the Foundations lab: seven Grade 6 stations (points and lines, angle as a turn, protractor, angle types, parallel and perpendicular lines, shape sorter, 3D shapes), including the everyday examples, which are drafts for the author to review.
 - Captured the screenshots in `docs/screenshots/` and added the copyright notice to the source files and the built bundle.
 - Edited `STORY.md` from the author's own draft and account. The experiences, observations and arguments are the author's; the AI restructured the wording, added analytical terms, and flagged claims that needed qualifying.
 

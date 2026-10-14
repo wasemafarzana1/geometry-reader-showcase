@@ -1,0 +1,165 @@
+# Decision Log
+
+This log records the significant decisions behind Geometry Reader: what was decided, who made it, and why.
+
+**Origin** says where each decision came from:
+- **Author:** Wasema Farzana decided it.
+- **AI proposal, accepted:** the AI coding assistant proposed it and the author approved it.
+
+Sections marked *Author's reasoning: to be written* are left for the author to complete in the author's own words.
+
+## How to add an entry
+
+```markdown
+## D-NNN · Short title
+- **Date:** YYYY-MM-DD
+- **Origin:** Author | AI proposal, accepted | AI proposal, rejected
+- **Decision:** What was decided, in one or two sentences.
+- **Alternatives considered:** What else was on the table.
+- **Reasoning:** Why this option, in the author's words.
+- **Consequences:** What this commits the project to, or rules out.
+```
+
+Rejected AI proposals belong here too. They show judgement as clearly as accepted ones.
+
+---
+
+## D-001 · Visual, manipulable geometry instead of text-first explanation
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Every concept is taught through direct manipulation: students drag points, lines and solids, and every angle, length, area and volume is shown live. No hidden values.
+- **Alternatives considered:** Static diagrams with worked examples; video lessons.
+- **Reasoning:** Grounded in the author's experience as a student in northern Bangladesh and as a teacher: text-only geometry resources blocked understanding, and visualisation unlocked it. See [STORY.md](STORY.md).
+- **Consequences:** The product is interaction-heavy, so it needs a capable browser. Its effect on learning must be measured, not assumed.
+
+## D-002 · Five labs spanning Grade 6 to O-Level
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** The first release covers five labs: angles on a line and at a point; parallel lines and triangles; polygons; circle theorems; 3D solids, nets and scale factors.
+- **Alternatives considered:** *Author's reasoning: to be written.*
+- **Reasoning:** *Author's reasoning: to be written.*
+- **Consequences:** Defines the scope against which the curriculum mapping (D-011) will be done.
+
+## D-003 · Paired vocabulary: formal term beside a plain-language translation
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Every formal term appears with a plain-language version, e.g. *Supplementary Angles ➔ (180° Flat Runway Pairs)*, plus a real-world anchor for each lab.
+- **Alternatives considered:** Formal terms only, with a separate glossary.
+- **Reasoning:** *Author's reasoning: to be written.*
+- **Consequences:** Every label needs two versions. The Bangla release (D-011) needs a Bangla plain-language layer, not a literal translation.
+
+## D-004 · Functional colour meaning, large touch targets, no diagnostic labels
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Each colour has one meaning: indigo = interactive, mint = proof or truth, amber = dimensions and warnings, cyan = vocabulary. Draggable targets are oversized and snap to key values. The interface never labels its users by diagnosis; it should simply feel right to those who need it.
+- **Alternatives considered:** Decorative colour; standard-size controls; an explicit "accessibility mode" label.
+- **Reasoning:** *Author's reasoning: to be written.*
+- **Consequences:** Colour cannot be used decoratively anywhere in the product.
+
+## D-005 · Implement all seven standard circle theorems
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The brief named "7 circle laws" but specified three. All seven standard theorems were built.
+- **Alternatives considered:** Build only the three specified.
+- **Reasoning:** The title promised seven, and the syllabus examines all seven.
+- **Consequences:** More content to maintain and to map to each syllabus.
+
+## D-006 · Correct the brief's "always 360°" claim for exterior angles
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The brief said walking round *any* polygon turns exactly 360°. That holds only for convex shapes. For dented (non-convex) shapes, turns at dented corners count as negative, and the lab warns when edges cross, because the rule then no longer applies.
+- **Alternatives considered:** Build the claim exactly as written.
+- **Reasoning:** A teaching tool must never teach a false general rule.
+- **Consequences:** Establishes mathematical correctness as overriding the brief's wording.
+
+## D-007 · Real fold-and-unfold nets; curved solids as 32 facets; exact formulas displayed
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** Nets unfold face by face about shared edges. Cylinders and cones are drawn with 32 flat facets so they can unroll. Every number on screen uses the exact formulas, not the facet approximation.
+- **Alternatives considered:** Separate static net images; CSS-only 3D.
+- **Reasoning:** A net that visibly unfolds from the solid shows *why* surface area is the sum of the faces.
+- **Consequences:** The drawn curved surfaces are about 0.3% smaller than the true ones. The displayed values are exact.
+
+## D-008 · Calm motion mode and full keyboard control
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** A "Motion: Calm" switch turns off flashes, pulses and auto-spin, and the app follows the device's reduce-motion setting. Every draggable point can also be moved with the arrow keys.
+- **Alternatives considered:** Fixed animation; mouse and touch only.
+- **Reasoning:** Fits D-004: the experience should adapt to sensory and motor needs without labelling anyone.
+- **Consequences:** Every new interaction must support keyboard use and calm mode.
+
+## D-009 · Disclose AI use openly
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted (the author initially preferred to hide AI involvement)
+- **Decision:** AI involvement is stated in [AI_USE.md](AI_USE.md). AI-written commits carry a `Co-Authored-By` line. Private session links are excluded.
+- **Alternatives considered:** Removing all trace of AI involvement.
+- **Reasoning:** For an audience in HCI, AI & Society and education, and for investors doing due diligence, hidden AI use that is discovered later costs more trust than open disclosure. Disclosure also lets the author's own judgement be credited separately.
+- **Consequences:** `AI_USE.md` must be kept up to date.
+
+## D-010 · Proprietary licence, all rights reserved
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** The project is not open source. Wasema Farzana holds copyright, and no use, copying, modification or sale is allowed without written permission.
+- **Alternatives considered:** MIT (open source).
+- **Reasoning:** The author intends Geometry Reader to become an edtech product and wants full intellectual, legal and creative control.
+- **Consequences:** Contributors and partners will need written agreements. Copyright in AI-generated code may be limited (see [AI_USE.md](AI_USE.md)); protection rests mainly on the author's own creative and editorial contribution.
+
+## D-011 · Phased rollout: English O-Level first, then the national curriculum and Bangla, then college
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Build and refine first in English on the O-Level syllabus, with English-medium and English Version students. Then map every lab to the national SSC/HSC (NCTB) syllabus and release a Bangla version for students in the periphery. Then extend to college level.
+- **Alternatives considered:** Starting with the national curriculum in Bangla.
+- **Reasoning:** The author teaches these students every day, so the design can be observed and refined closely before being extended to the students it was conceived for.
+- **Consequences:** Until the Bangla release, the product mainly reaches the urban students the equity argument is about. [STORY.md](STORY.md) says so openly.
+
+## D-012 · Topics first, curriculum second
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Every lab teaches its topic in depth, whatever the syllabus. Matching a lab to a particular syllabus is a separate layer on top.
+- **Alternatives considered:** Building separate content for each syllabus.
+- **Reasoning:** "Students regardless of curriculum must have the in-depth understanding of the topics." (author)
+- **Consequences:** A syllabus-mapping table is needed before each new curriculum release.
+
+## D-013 · Visual-first; audio out of current scope
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** The current version focuses on visual interaction only. Audio narration may come later.
+- **Reasoning:** *Author's reasoning: to be written.*
+- **Consequences:** The product must not be described as offering audio support.
+
+## D-014 · Name: Geometry Reader, the first of a series of "Readers"
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** The product is called Geometry Reader. Later topics will follow the same pattern under their own "Reader" names.
+- **Alternatives considered:** NeoGeometry; Geometry Spatial Engine.
+- **Reasoning:** *Author's reasoning: to be written.*
+- **Consequences:** The code should keep each lab self-contained so that new topics can follow the same structure.
+
+## D-015 · Design claims stay hypotheses until tested
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** Effects on maths anxiety, learning and accessibility are described as hypotheses until evaluated. See [RESEARCH.md](RESEARCH.md).
+- **Reasoning:** Unsupported claims damage credibility with academic reviewers and investors alike.
+- **Consequences:** Marketing language must stay within the evidence.
+
+## D-016 · Privacy: no identifying places or people
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Public documents say "northern Bangladesh". They never name the author's district or any schools, neighbourhoods or tutoring families.
+- **Reasoning:** The repository is public, and the families and students the author worked with deserve anonymity.
+- **Consequences:** Applies to every document and commit.
+
+## D-017 · Private source repository, public showcase repository
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The source code stays in a private repository permanently. A separate public repository holds the documentation, the screenshots and the built demo.
+- **Alternatives considered:** Making the source repository public under the proprietary licence.
+- **Reasoning:** Copyright in AI-written code may be limited, while trade-secret protection depends only on keeping the code secret, and publishing it gives that up for good. The public showcase still gives reviewers, professors and investors everything they need. Source access is granted only under an NDA.
+- **Consequences:** The showcase must be updated by hand after each change. The built demo is minified, but its JavaScript still reaches every visitor's browser; that is unavoidable for a web app.
+
+## D-018 · Header tagline: "Visual Geometry Sandbox" instead of "Anti-Phobia Sandbox"
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The app header describes what the product is, not an outcome it has not yet shown.
+- **Reasoning:** "Anti-Phobia" claims an untested effect on anxiety (see D-015), and it is the first thing reviewers and investors see.
+- **Consequences:** The aim of reducing maths anxiety remains in RESEARCH.md as hypothesis H2.

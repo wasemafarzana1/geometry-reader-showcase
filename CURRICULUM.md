@@ -29,8 +29,8 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
 ## B · Angles and lines
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| B1 | Angles on a straight line (180°) | 6–7 | A4 | Built | Planned | 2 · Foundation Runway |
-| B2 | Angles around a point (360°) | 6–7 | B1 | Built | Planned | 2 · Foundation Runway |
+| B1 | Angles on a straight line (180°) | 6–7 | A4 | Built | Planned | 2 · Angle Runway |
+| B2 | Angles around a point (360°) | 6–7 | B1 | Built | Planned | 2 · Angle Runway |
 | B3 | Vertically opposite angles | 7 | B1 | Built | Planned | 3 · Vector Railways |
 | B4 | Alternate, corresponding and co-interior angles | 7–8 | B1, A5 | Built | Planned | 3 · Vector Railways |
 | B5 | Bearings | 9 | B2, B4 | Planned | — | — |
@@ -50,10 +50,10 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
 ## D · Quadrilaterals and polygons
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| D1 | The quadrilateral family: square, rectangle, rhombus, parallelogram, trapezium, kite | 6–7 | A5, A6 | Partial (named in Shape Sorter) | — | 1 · Foundations: Shape Sorter; Quadrilateral Family (new) |
-| D2 | Properties of quadrilaterals: sides, angles, diagonals, symmetry | 7–8 | D1, H1 | Planned | Planned | Quadrilateral Family (new) |
-| D3 | The family tree: every square is a rectangle and a rhombus | 7–8 | D2 | Planned | — | Quadrilateral Family (new) |
-| D4 | Angle sum of a quadrilateral (360°) | 7 | C2 | Partial (n = 4 in Polygon Factory) | Planned | 4 · Polygon Factory |
+| D1 | The quadrilateral family: square, rectangle, rhombus, parallelogram, trapezium, kite | 6–7 | A5, A6 | Built | — | 5 · Quadrilateral Family; 1 · Foundations: Shape Sorter |
+| D2 | Properties of quadrilaterals: sides, angles, diagonals, symmetry | 7–8 | D1, H1 | Built | Planned | 5 · Quadrilateral Family |
+| D3 | The family tree: every square is a rectangle and a rhombus | 7–8 | D2 | Built | — | 5 · Quadrilateral Family |
+| D4 | Angle sum of a quadrilateral (360°) | 7 | C2 | Partial (n = 4 in Polygon Factory; shown live in Quadrilateral Family) | Planned | 4 · Polygon Factory; 5 · Quadrilateral Family |
 | D5 | Interior angle sum of any polygon: (n − 2) × 180° | 8 | C2 | Built | Planned | 4 · Polygon Factory |
 | D6 | Exterior angles of a polygon sum to 360° | 8 | D5 | Built | Planned | 4 · Polygon Factory |
 | D7 | Regular polygons and tessellation | 8–9 | D5 | Partial | — | 4 · Polygon Factory |
@@ -62,13 +62,13 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
 | E1 | Parts of a circle: radius, diameter, chord, arc, sector, segment, tangent | 6–7 | A1 | Partial (glossary only) | — | — |
-| E2 | Angle at the centre is twice the angle at the circumference | 9–10 | C4, E1 | Built | **Built** (visual proof) | 5 · Circle Laws |
-| E3 | Angles in the same segment are equal | 9–10 | E2 | Built | **Built** (visual proof) | 5 · Circle Laws |
-| E4 | Angle in a semicircle is 90° | 9–10 | E2 | Built | **Built** (visual proof) | 5 · Circle Laws |
-| E5 | Opposite angles of a cyclic quadrilateral sum to 180° | 9–10 | E2 | Built | **Built** (visual proof) | 5 · Circle Laws |
-| E6 | Tangent is perpendicular to the radius | 9–10 | E1 | Built | Planned | 5 · Circle Laws |
-| E7 | Two tangents from an external point are equal | 9–10 | E6, C7 | Built | Planned | 5 · Circle Laws |
-| E8 | Alternate segment theorem | 10 | E2, E6 | Built | Planned | 5 · Circle Laws |
+| E2 | Angle at the centre is twice the angle at the circumference | 9–10 | C4, E1 | Built | **Built** (visual proof) | 6 · Circle Laws |
+| E3 | Angles in the same segment are equal | 9–10 | E2 | Built | **Built** (visual proof) | 6 · Circle Laws |
+| E4 | Angle in a semicircle is 90° | 9–10 | E2 | Built | **Built** (visual proof) | 6 · Circle Laws |
+| E5 | Opposite angles of a cyclic quadrilateral sum to 180° | 9–10 | E2 | Built | **Built** (visual proof) | 6 · Circle Laws |
+| E6 | Tangent is perpendicular to the radius | 9–10 | E1 | Built | Planned | 6 · Circle Laws |
+| E7 | Two tangents from an external point are equal | 9–10 | E6, C7 | Built | Planned | 6 · Circle Laws |
+| E8 | Alternate segment theorem | 10 | E2, E6 | Built | Planned | 6 · Circle Laws |
 | E9 | Chord properties: the perpendicular from the centre bisects a chord | 9–10 | C7, E1 | Planned | Planned | — |
 
 ## F · Mensuration in 2D
@@ -86,17 +86,17 @@ Each formula is *derived on screen*, never just stated (see D-001).
 ## G · Mensuration in 3D
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| G1 | Nets of solids | 7–8 | A7 | Built | — | 6 · 3D Spatial Matrix |
-| G2 | Surface area and volume: prism, cylinder | 8–9 | F2, F4, G1 | Built | Planned | 6 · 3D Spatial Matrix |
-| G3 | Surface area and volume: pyramid, cone | 9–10 | G2 | Built | Planned | 6 · 3D Spatial Matrix |
+| G1 | Nets of solids | 7–8 | A7 | Built | — | 7 · 3D Spatial Matrix |
+| G2 | Surface area and volume: prism, cylinder | 8–9 | F2, F4, G1 | Built | Planned | 7 · 3D Spatial Matrix |
+| G3 | Surface area and volume: pyramid, cone | 9–10 | G2 | Built | Planned | 7 · 3D Spatial Matrix |
 | G4 | Sphere and hemisphere | 9–10 | G2 | Planned | — | — |
 | G5 | Units of volume and capacity | 7–8 | G2 | Planned | — | — |
-| G6 | Scale factor: lengths ×k, areas ×k², volumes ×k³ | 9–10 | G2, C8 | Built | Planned | 6 · 3D Spatial Matrix |
+| G6 | Scale factor: lengths ×k, areas ×k², volumes ×k³ | 9–10 | G2, C8 | Built | Planned | 7 · 3D Spatial Matrix |
 
 ## H · Symmetry and transformations
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| H1 | Line symmetry and rotational symmetry | 6–7 | A6 | Planned | — | — |
+| H1 | Line symmetry and rotational symmetry | 6–7 | A6 | Partial (quadrilaterals only) | — | 5 · Quadrilateral Family |
 | H2 | Reflection, rotation, translation | 8 | J1, H1 | Planned | — | — |
 | H3 | Enlargement and scale factor (including negative and fractional) | 8–9 | H2 | Planned | — | — |
 | H4 | Combined and inverse transformations | 9–10 | H2, H3 | Planned | — | — |
@@ -138,9 +138,9 @@ Counting the 65 topics in sections A–L:
 
 | Status | Topics |
 |---|---|
-| Built | 26 |
+| Built | 29 |
 | Partial | 6 |
-| Planned | 33 |
+| Planned | 30 |
 
 Visual proofs (D-020, D-023): **4 built**: E2 (angle at the centre), E3 (same segment), E4 (semicircle) and E5 (cyclic quadrilateral). Next candidates: E6–E8, the remaining circle theorems, and C2/C3, the triangle angle sum and exterior angle.
 

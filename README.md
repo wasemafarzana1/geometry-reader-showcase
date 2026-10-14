@@ -2,7 +2,7 @@
 
 **See geometry move, instead of memorising it.** Geometry Reader is an interactive, browser-based geometry sandbox for students from Grade 6 to O-Level. Students drag points, lines and solids, and every angle, length, area and volume updates live, so theorems are discovered rather than recited.
 
-**Live demo:** https://wasemafarzana1.github.io/geometry-reader-showcase/ (the app itself is in [`demo/`](demo/), as built and minified output) · **Status:** working prototype covering 26 of 65 planned geometry topics, not yet tested with students · **Author:** Wasema Farzana
+**Live demo:** https://wasemafarzana1.github.io/geometry-reader-showcase/ (the app itself is in [`demo/`](demo/), as built and minified output) · **Status:** working prototype covering 29 of 65 planned geometry topics, not yet tested with students · **Author:** Wasema Farzana
 
 ![The 3D Spatial Matrix lab: a cylinder unfolding into its net, with live surface-area and scale readouts](docs/screenshots/05-spatial-matrix.png)
 
@@ -12,12 +12,13 @@ In Bangladesh, the best tutoring and learning resources are concentrated among D
 ## What it does
 | Lab | Topic | What the student does |
 |---|---|---|
-| 1 · Foundations | The first ideas (Grade 6) | Seven stations: points, lines, rays and planes; an angle as a turn; using a protractor; types of angle; parallel and perpendicular lines; a shape sorter that names any shape you drag; and 3D shapes whose faces, edges and corners you count one by one. |
-| 2 · Foundation Runway | Angles on a line and at a point | Drags a ray and watches the two angles always sum to 180°, then expands it into a full 360° turn. |
+| 1 · Foundations | The first ideas (Grade 6) | Seven stations: points, lines, rays and planes; an angle as a turn; using a protractor; types of angle; parallel and perpendicular lines; a shape sorter that names any shape you drag; and 3D shapes whose faces, edges and corners you count one by one. Every everyday example is drawn in-house, with the geometry in it highlighted. |
+| 2 · Angle Runway | Angles on a line and at a point | Drags a ray and watches the two angles always sum to 180°, then expands it into a full 360° turn. |
 | 3 · Vector Railways | Parallel lines and triangles | Tilts a line crossing two parallel rails and lights up the Z, F, C and X angle patterns; reshapes a triangle and sees the outside angle equal the two opposite inside ones. |
 | 4 · Polygon Factory | Interior and exterior angles | Changes the number of sides from 3 to 10, splits the shape into triangles, and walks around its edge to watch the turns add up to 360°. |
-| 5 · Circle Laws | All seven circle theorems | Slides points round a circle and watches each theorem hold, then watches four of them *proved* step by step. |
-| 6 · 3D Spatial Matrix | Solids, nets and scale | Unfolds four solids into flat nets and scales them up to see lengths grow ×k, areas ×k² and volumes ×k³. |
+| 5 · Quadrilateral Family | Squares, rectangles, rhombuses, parallelograms, trapeziums and kites | Picks a family's rules and stretches the shape, which keeps the rules however it is dragged; watches a rectangle become a square and the family tree light up; checks sides, angles, diagonals and symmetry live. |
+| 6 · Circle Laws | All seven circle theorems | Slides points round a circle and watches each theorem hold, then watches four of them *proved* step by step. |
+| 7 · 3D Spatial Matrix | Solids, nets and scale | Unfolds four solids into flat nets and scales them up to see lengths grow ×k, areas ×k² and volumes ×k³. |
 
 <table>
   <tr>
@@ -26,9 +27,11 @@ In Bangladesh, the best tutoring and learning resources are concentrated among D
   </tr>
   <tr>
     <td><img src="docs/screenshots/04-circle-laws.png" alt="Circle Laws lab"></td>
-    <td><img src="docs/screenshots/01-foundation-runway.png" alt="Foundation Runway lab"></td>
+    <td><img src="docs/screenshots/01-angle-runway.png" alt="Angle Runway lab"></td>
   </tr>
 </table>
+
+![Quadrilateral Family lab: an isosceles trapezium with its bases, legs, equal diagonals and line of symmetry marked](docs/screenshots/08-quadrilateral-family.png)
 
 ![Foundations lab: using a protractor, with the correct scale lit up and the wrong-scale reading flagged](docs/screenshots/07-foundations.png)
 
@@ -53,7 +56,8 @@ The goal is complete coverage of school geometry, from the idea of a point to O-
 1. **Now:** English version on the O-Level syllabus, refined with English-medium and English Version students.
    - **Visual proofs:** the learner *watches* why each theorem holds, as parts of the figure fold, swing and slide into place. Four are live: the angle at the centre, the angle in a semicircle, angles in the same segment, and the cyclic quadrilateral.
    - **Foundations lab: done.** Seven Grade 6 stations, each linked to everyday objects.
-   - **Then:** a Quadrilateral Family lab, and 2D mensuration with every formula derived on screen.
+   - **Quadrilateral Family lab: done.** Rule-keeping shapes, a live family tree and a property table.
+   - **Then:** 2D mensuration with every formula derived on screen, starting with the area of a trapezium, ½(a + b)h.
 2. **Next:** match every lab to the national SSC/HSC (NCTB) syllabus, and release a full Bangla version.
 3. **Then:** college-level topics, and further "Readers" for other areas of mathematics.
 4. **Throughout:** testing on low-cost phones, and classroom studies outside Dhaka. See the **[research agenda](RESEARCH.md)**.
@@ -71,7 +75,7 @@ The goal is complete coverage of school geometry, from the idea of a point to O-
 ## How it is built
 The author directs the design. An AI coding assistant writes the code from the author's briefs, under the author's review; see [AI_USE.md](AI_USE.md). Technically, it is a single-page React 18 app styled with Tailwind CSS, built as a shared engine (geometry maths, interaction, feedback and design system) with one module per topic, so new topics reuse the same foundations. All geometry and 3D rendering are hand-written SVG maths, with no 3D or physics libraries. It runs entirely in the browser: no server, no accounts, no data collection.
 
-Checks performed so far: lint and production build on every push; a numerical test that the 3D nets unfold flat with surface area preserved; a scripted browser walk-through of all five labs; and a check that the layout works on a phone-width screen.
+Checks performed so far: lint and production build on every push; a numerical test that the 3D nets unfold flat with surface area preserved; a numerical test that every quadrilateral family keeps its rules through thousands of random drags; a scripted browser walk-through of all seven labs; and a check that the layout works on a phone-width screen.
 
 The source code is kept in a private repository. Authorised reviewers can be given access under a non-disclosure agreement; ask the author.
 

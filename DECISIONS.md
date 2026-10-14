@@ -211,18 +211,43 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 
 ## D-025 · Foundations lab: seven stations for Grade 6
 - **Date:** 2026-10-14
-- **Origin:** AI proposal, built at the author's request; details pending author review
+- **Origin:** AI proposal, built at the author's request; open points resolved by the author
 - **Decision:** One lab, placed first in the navigation, with seven stations matching curriculum topics A1–A7. Each station pairs a hands-on figure with paired vocabulary (D-003) and an everyday-objects card (D-022).
-- **Pending author review:**
-  1. **Everyday examples.** These are AI-drafted, and some were chosen to be familiar in Bangladesh: a samosa, a carrom board, a paper kite (ghuri), the national flag. Replace any that do not fit your students.
-  2. **Emoji or illustrations.** Everyday objects are currently shown with emoji. Purpose-made illustrations or photographs would be clearer and more culturally specific, but they need design work or a budget.
-  3. **The trapezium definition.** The shape sorter calls a four-sided shape with *exactly one* pair of parallel sides a trapezium. Some curricula use "at least one pair", which also counts parallelograms. Match this to the curriculum you teach.
-  4. **Lab names.** "Foundations" (Lab 1) and "Foundation Runway" (Lab 2) sound alike. Consider renaming one.
-- **Consequences:** Topics A1–A7 are now built (see [CURRICULUM.md](CURRICULUM.md)).
+- **Resolved by the author:**
+  1. **Everyday examples:** approved as drafted, including the examples familiar in Bangladesh (a samosa, a carrom board, a paper kite or ghuri, the national flag).
+  2. **Emoji or illustrations:** replaced by in-house illustrations (D-028).
+  3. **The trapezium definition:** exactly one pair of parallel sides (D-027).
+  4. **Lab names:** Lab 2 renamed from "Foundation Runway" to "Angle Runway", so it no longer sounds like Lab 1.
+- **Consequences:** Topics A1–A7 are built (see [CURRICULUM.md](CURRICULUM.md)).
 
 ## D-026 · Counting faces, edges and vertices on curved solids
 - **Date:** 2026-10-14
-- **Origin:** AI proposal, pending author review
-- **Decision:** Curved surfaces are counted as faces, and listed separately from flat faces. Circular rims count as edges. The tip of a cone counts as a vertex. Cylinder: 2 flat + 1 curved face, 2 edges, 0 vertices. Cone: 1 flat + 1 curved, 1 edge, 1 vertex. Sphere: 1 curved surface, 0 edges, 0 vertices.
-- **Reasoning:** This is the most common school convention, but textbooks disagree. Some say a cone has no vertex, or that only flat surfaces count as faces. The lab therefore keeps Euler's pattern to flat-faced solids only.
-- **Consequences:** If the author's curriculum uses another convention, change the counts in `src/labs/foundations/Solids3D.jsx`.
+- **Origin:** AI proposal, confirmed and extended by the author
+- **Decision:** Curved surfaces count as faces, listed separately from flat faces. Circular rims count as edges. Cylinder: 3 faces (2 flat, 1 curved), 2 edges, 0 vertices. Cone: 2 faces (1 flat, 1 curved), 1 edge, 1 vertex. Sphere: 1 curved surface, 0 edges, 0 vertices.
+- **Author's addition:** Teach the disagreement openly. Strict definitions say a vertex is where straight edges meet, so a cone has 0 vertices and only 1 face (only flat surfaces count). Students should know why books differ, and should know the word everyone agrees on for the cone's tip: the **apex**.
+- **Reasoning:** The standard school answer is the one students are marked on, but a learner who meets the other convention should understand it rather than think they were taught wrong. (author)
+- **Consequences:** The 3D Shapes station shows a "Why do some books disagree?" card for curved solids, with the apex explained for the cone. Euler's pattern (F + V − E = 2) is kept to flat-faced solids.
+
+## D-027 · A trapezium has exactly one pair of parallel sides
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** A trapezium is a quadrilateral with exactly one pair of parallel sides. The parallel sides are the **bases**; the other two are the **legs**. Types: isosceles (equal legs), right (two right angles) and scalene. Area = ½(a + b)h, where a and b are the bases and h is the distance between them. "Trapezium" in the UK and Bangladesh is "trapezoid" in the USA.
+- **Alternatives considered:** The inclusive definition (at least one pair), under which every parallelogram is also a trapezium.
+- **Reasoning:** This is the definition the author's students are taught and examined on. (author)
+- **Consequences:** In the family tree, Parallelogram does not sit under Trapezium. The lab says so, and notes that some books, especially in the USA, use the inclusive definition. Every other family is inclusive: a square is a rectangle, a rhombus, a parallelogram and a kite. The area formula will be derived on screen in the 2D Mensuration lab (D-001).
+
+## D-028 · In-house line illustrations for everyday objects
+- **Date:** 2026-10-14
+- **Origin:** Author (no budget; design time given); drawings by the AI assistant
+- **Decision:** Every everyday example is drawn as a small line illustration in one shared style. The geometric idea the object carries (a right angle, a parallel pair, an apex, a turn) is drawn in amber, so the eye goes straight to it. Emoji remain only as a fallback.
+- **Alternatives considered:** Emoji, which look different on every device and cannot highlight the geometry; commissioned illustrations or photographs, for which there is no budget.
+- **Reasoning:** Illustrations look the same on every phone, match the app's design, and point at the maths in the object rather than just naming it.
+- **Consequences:** 115 drawings live in `src/content/illustrations.jsx`. New examples need a new drawing. For the Bangla version, objects from students' own surroundings can be added in the same style.
+
+## D-029 · Quadrilateral Family lab: keep the rules, change the shape
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, built at the author's request; one point pending author review
+- **Decision:** The learner chooses a family's rules (for example "all four corners stay at 90°") and drags the corners. The shape keeps those rules however it is stretched, so the learner sees which properties always come with the rules and which belong to one drawing only. A family tree lights up every family the shape belongs to; tapping a box gives the shape that family's rules. A side-by-side table lists what each family always has, measured by the app on a typical example of each family rather than typed in.
+- **Reasoning:** A fixed diagram shows one shape, so "every square is a rectangle" has to be taken on trust. Stretching a rectangle until it *becomes* a square, while it never stops obeying the rectangle rules, shows the family relationship happening (D-001). That this helps learners accept the inclusive families is a hypothesis to test (H4 in [RESEARCH.md](RESEARCH.md)). Measuring the table from real shapes means the text cannot contradict the figure.
+- **Pending author review:** **Is a rhombus a kite?** The lab follows the common inclusive definition (two pairs of equal adjacent sides), so a rhombus and a square also count as kites, and the tree joins Kite to Rhombus. Some books exclude them. Confirm which your students are taught.
+- **Consequences:** Topics D1–D3 are built. The lab is placed after Polygon Factory, so Circle Laws and 3D Spatial Matrix become Labs 6 and 7. Visual proofs of the family properties (for example, why a parallelogram's opposite angles are equal) are still to come.

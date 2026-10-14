@@ -25,6 +25,7 @@ These layers draw on Bourdieu's distinction between economic, cultural and socia
 - **H1:** Students using Geometry Reader show larger gains in conceptual understanding than a comparison group.
 - **H2:** Maths anxiety falls after use, with larger reductions for students who start out more anxious.
 - **H3:** Paired vocabulary improves correct use of formal terms, without reducing exam-style accuracy.
+- **H4:** Watching a shape keep its rules while it is stretched (for example, a rectangle becoming a square) improves students' acceptance of inclusive class relationships, such as "every square is a rectangle", compared with fixed diagrams.
 
 ## Planned methods
 - **Usability (first step):** think-aloud sessions with a small number of students, plus the System Usability Scale (SUS) questionnaire.

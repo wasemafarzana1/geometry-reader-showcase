@@ -5,12 +5,14 @@ This project was built with substantial help from an AI coding assistant (Claude
 ## What the AI assistant did
 - Wrote all of the application code (kept in the private source repository), working from a written brief, and later restructured it into a shared engine plus one module per topic.
 - Drafted the licence text and set up the build tooling: Vite, Tailwind, ESLint, and the GitHub Pages workflow.
-- Ran automated checks: lint, production build, a numerical test of the 3D net unfolding, and a scripted headless-browser pass through all five labs.
+- Ran automated checks: lint, production build, a numerical test of the 3D net unfolding, a randomised test that each quadrilateral family keeps its rules while dragged, and a scripted headless-browser pass through all seven labs.
 - Drafted the README, this statement, `RESEARCH.md` (research questions, study plan and ethics, from the author's stated goals) and `DECISIONS.md`. Decision-log entries the AI proposed are marked as AI proposals; entries marked "Author's reasoning: to be written" are deliberately left for the author.
 - Set up the split between the private source repository and the public showcase repository, which holds the documents, screenshots and built demo.
 - Drafted `CURRICULUM.md` (the topic list, grade placements and prerequisites) for the author to correct, and wrote up the author's reasoning in `DECISIONS.md` from the author's own statements.
 - Built the visual proofs in the Circle Laws lab (`Watch why it's true`): angle at the centre, angle in a semicircle, angles in the same segment and the cyclic quadrilateral, plus a shared proof kit. This follows the author's direction that proofs must be watched, not read.
-- Built the Foundations lab: seven Grade 6 stations (points and lines, angle as a turn, protractor, angle types, parallel and perpendicular lines, shape sorter, 3D shapes), including the everyday examples, which are drafts for the author to review.
+- Built the Foundations lab: seven Grade 6 stations (points and lines, angle as a turn, protractor, angle types, parallel and perpendicular lines, shape sorter, 3D shapes), including the everyday examples, which the author reviewed and approved.
+- Drew the 115 everyday-object illustrations, as one set in a single line style, after the author chose in-house drawings over emoji (D-028).
+- Built the Quadrilateral Family lab: rule-keeping shapes, the property checklist, the family tree and the comparison table. The trapezium definition and the cone counting convention are the author's (D-026, D-027).
 - Captured the screenshots in `docs/screenshots/` and added the copyright notice to the source files and the built bundle.
 - Edited `STORY.md` from the author's own draft and account. The experiences, observations and arguments are the author's; the AI restructured the wording, added analytical terms, and flagged claims that needed qualifying.
 

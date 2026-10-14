@@ -12,7 +12,7 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
   - **Built:** in the app with interactive exploration.
   - **Partial:** some of it is in the app.
   - **Planned:** not built yet.
-- **Proof:** whether the lab explains *why* the result holds (Proof Mode, D-020), not only *that* it holds. "—" means the topic has no theorem to prove.
+- **Proof:** whether the lab has a visual proof that lets the learner watch *why* the result holds (D-020, D-023), not only see *that* it holds. "—" means the topic has no theorem to prove.
 - **Lab:** where it lives in the app.
 
 ## A · Foundations
@@ -62,7 +62,7 @@ The complete scope of Geometry Reader (D-019): every topic from the first idea o
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
 | E1 | Parts of a circle: radius, diameter, chord, arc, sector, segment, tangent | 6–7 | A1 | Partial (glossary only) | — | — |
-| E2 | Angle at the centre is twice the angle at the circumference | 9–10 | C4, E1 | Built | Planned | 4 · Circle Laws |
+| E2 | Angle at the centre is twice the angle at the circumference | 9–10 | C4, E1 | Built | **Built** (visual proof) | 4 · Circle Laws |
 | E3 | Angles in the same segment are equal | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
 | E4 | Angle in a semicircle is 90° | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
 | E5 | Opposite angles of a cyclic quadrilateral sum to 180° | 9–10 | E2 | Built | Planned | 4 · Circle Laws |
@@ -142,7 +142,7 @@ Counting the 65 topics in sections A–L:
 | Partial | 6 |
 | Planned | 40 |
 
-Proof Mode exists for none yet. It is the next build (D-020).
+Visual proofs (D-020, D-023): **1 built** (E2, angle at the centre). E3, E4 and E5 follow directly from it; their own visual proofs are next.
 
 ## Syllabus mapping (to verify)
 Add one row per topic once checked against the official documents:

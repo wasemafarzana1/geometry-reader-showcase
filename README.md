@@ -29,12 +29,17 @@ In Bangladesh, the best tutoring and learning resources are concentrated among D
   </tr>
 </table>
 
+**Visual proof:** the learner watches *why* the angle at the centre is double the angle at the edge. Two isosceles triangles fold onto themselves, and their equal corners slide into the centre.
+
+![Visual proof of the angle-at-the-centre theorem, final step](docs/screenshots/06-visual-proof.png)
+
 ## Design principles
 - **Topics first, curriculum second.** Each lab teaches the topic in depth, and matching it to O-Level, the national SSC/HSC syllabus or English Version is a separate layer.
 - **Nothing hidden.** Every value is shown live as the student moves things.
 - **Two kinds of language.** Every formal term sits beside a plain-language translation, e.g. *Supplementary Angles ➔ (180° Flat Runway Pairs)*.
 - **Each colour has one job.** Indigo = something you can move, mint = proofs and truths, amber = measurements and warnings, cyan = vocabulary.
 - **Built for every body and nervous system.** Large drag targets that snap to key values, full keyboard control, and a Calm mode that switches off flashes and motion.
+- **Watch why, not just that.** Visual proofs animate the reason a theorem holds, on the learner's own figure.
 - **Mathematically honest.** Where a simple rule has exceptions, the lab shows them, e.g. dented polygons.
 
 The reasoning behind each choice is recorded in the **[decision log](DECISIONS.md)**.
@@ -43,7 +48,7 @@ The reasoning behind each choice is recorded in the **[decision log](DECISIONS.m
 The goal is complete coverage of school geometry, from the idea of a point to O-Level and then college level. The **[curriculum map](CURRICULUM.md)** tracks every topic and its status.
 
 1. **Now:** English version on the O-Level syllabus, refined with English-medium and English Version students.
-   - **Proof Mode:** step-by-step explanations of *why* each theorem holds, starting with the theorems already in the app.
+   - **Visual proofs:** the learner *watches* why each theorem holds, as parts of the figure fold, swing and slide into place. The first one is live: the angle at the centre.
    - **Then:** a Foundations lab (point, line, angle, shapes), a Quadrilateral Family lab, and 2D mensuration with every formula derived on screen.
 2. **Next:** match every lab to the national SSC/HSC (NCTB) syllabus, and release a full Bangla version.
 3. **Then:** college-level topics, and further "Readers" for other areas of mathematics.

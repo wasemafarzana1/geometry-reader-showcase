@@ -193,3 +193,11 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Decision:** Each shape and property is linked to everyday objects that students see and handle, shown visually where possible rather than as a single line of text.
 - **Reasoning:** Students should relate to the idea and think of it the next time they see or work with the object. (author)
 - **Consequences:** Each lab needs a set of everyday examples. The Bangla release should use examples from students' own surroundings.
+
+## D-023 · Proofs are visual and curriculum-neutral, not exam-style write-ups
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Each proof is shown as an animation the learner watches step by step, with short plain-language captions. Pieces of the figure fold, swing and slide so that the reason becomes visible. Proofs do not follow any exam board's written format.
+- **Alternatives considered:** O-Level-style statement-and-reason lines; both formats side by side.
+- **Reasoning:** "The learner must not just wonder how did this happen, they must see and watch how it happened actually through visualisation." The aim is in-depth understanding of the topic, not a particular curriculum's style of answer (D-012). (author)
+- **Consequences:** Every proof needs a visual mechanism, not just text. Proofs stay live, so if the learner drags the figure, the same argument replays on the new shape. The first proof built is the angle at the centre, chosen because three other circle theorems follow from it.

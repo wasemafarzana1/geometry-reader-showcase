@@ -2,7 +2,7 @@
 
 **See geometry move, instead of memorising it.** Geometry Reader is an interactive, browser-based geometry sandbox for students from Grade 6 to O-Level. Students drag points, lines and solids, and every angle, length, area and volume updates live, so theorems are discovered rather than recited.
 
-**Live demo:** https://wasemafarzana1.github.io/geometry-reader-showcase/ (the app itself is in [`demo/`](demo/), as built and minified output) · **Status:** working prototype, not yet tested with students · **Author:** Wasema Farzana
+**Live demo:** https://wasemafarzana1.github.io/geometry-reader-showcase/ (the app itself is in [`demo/`](demo/), as built and minified output) · **Status:** working prototype covering 19 of 65 planned geometry topics, not yet tested with students · **Author:** Wasema Farzana
 
 ![The 3D Spatial Matrix lab: a cylinder unfolding into its net, with live surface-area and scale readouts](docs/screenshots/05-spatial-matrix.png)
 
@@ -40,7 +40,11 @@ In Bangladesh, the best tutoring and learning resources are concentrated among D
 The reasoning behind each choice is recorded in the **[decision log](DECISIONS.md)**.
 
 ## Roadmap
+The goal is complete coverage of school geometry, from the idea of a point to O-Level and then college level. The **[curriculum map](CURRICULUM.md)** tracks every topic and its status.
+
 1. **Now:** English version on the O-Level syllabus, refined with English-medium and English Version students.
+   - **Proof Mode:** step-by-step explanations of *why* each theorem holds, starting with the theorems already in the app.
+   - **Then:** a Foundations lab (point, line, angle, shapes), a Quadrilateral Family lab, and 2D mensuration with every formula derived on screen.
 2. **Next:** match every lab to the national SSC/HSC (NCTB) syllabus, and release a full Bangla version.
 3. **Then:** college-level topics, and further "Readers" for other areas of mathematics.
 4. **Throughout:** testing on low-cost phones, and classroom studies outside Dhaka. See the **[research agenda](RESEARCH.md)**.
@@ -49,13 +53,14 @@ The reasoning behind each choice is recorded in the **[decision log](DECISIONS.m
 | Document | For | Contents |
 |---|---|---|
 | [STORY.md](STORY.md) | Everyone | Why Geometry Reader exists |
+| [CURRICULUM.md](CURRICULUM.md) | Educators, reviewers | Every planned topic, its grade, what it builds on, and its status |
 | [DECISIONS.md](DECISIONS.md) | Reviewers, partners | Every major design decision, who made it, and why |
 | [RESEARCH.md](RESEARCH.md) | Academics, funders | Research questions, hypotheses, study plan, ethics |
 | [AI_USE.md](AI_USE.md) | Everyone | What the author did, and what the AI coding assistant did |
 | [LICENSE](LICENSE) | Partners, buyers | Proprietary licence terms |
 
 ## How it is built
-The author directs the design. An AI coding assistant writes the code from the author's briefs, under the author's review; see [AI_USE.md](AI_USE.md). Technically, it is a single-page React 18 app styled with Tailwind CSS. All geometry and 3D rendering are hand-written SVG maths, with no 3D or physics libraries. It runs entirely in the browser: no server, no accounts, no data collection.
+The author directs the design. An AI coding assistant writes the code from the author's briefs, under the author's review; see [AI_USE.md](AI_USE.md). Technically, it is a single-page React 18 app styled with Tailwind CSS, built as a shared engine (geometry maths, interaction, feedback and design system) with one module per topic, so new topics reuse the same foundations. All geometry and 3D rendering are hand-written SVG maths, with no 3D or physics libraries. It runs entirely in the browser: no server, no accounts, no data collection.
 
 Checks performed so far: lint and production build on every push; a numerical test that the 3D nets unfold flat with surface area preserved; a scripted browser walk-through of all five labs; and a check that the layout works on a phone-width screen.
 

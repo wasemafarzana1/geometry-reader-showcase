@@ -36,16 +36,16 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Date:** 2026-10-14
 - **Origin:** Author
 - **Decision:** The first release covers five labs: angles on a line and at a point; parallel lines and triangles; polygons; circle theorems; 3D solids, nets and scale factors.
-- **Alternatives considered:** *Author's reasoning: to be written.*
-- **Reasoning:** *Author's reasoning: to be written.*
-- **Consequences:** Defines the scope against which the curriculum mapping (D-011) will be done.
+- **Alternatives considered:** Building a smaller set of topics more deeply first.
+- **Reasoning:** The goal is for every part of geometry to be covered. These five were a starting point, not a chosen boundary: "As I needed to start from somewhere, I started." (author)
+- **Consequences:** The five labs are the first slice of a complete curriculum, not the whole product. The full scope is set by D-019 and mapped in [CURRICULUM.md](CURRICULUM.md).
 
 ## D-003 · Paired vocabulary: formal term beside a plain-language translation
 - **Date:** 2026-10-14
 - **Origin:** Author
 - **Decision:** Every formal term appears with a plain-language version, e.g. *Supplementary Angles ➔ (180° Flat Runway Pairs)*, plus a real-world anchor for each lab.
 - **Alternatives considered:** Formal terms only, with a separate glossary.
-- **Reasoning:** *Author's reasoning: to be written.*
+- **Reasoning:** Formal terms are where students freeze. Pairing each term with a plain-language translation removes the wall of jargon, but keeps the academic word that students must use in exams. In the author's words, the aim is to break complex concepts "down into articulate, realistic visualizations" and to reduce "excessive cognitive data load". The pairing should also reach into daily life: showing everyday objects with the shape or property in question, so that students recognise it the next time they see or handle one (see D-022).
 - **Consequences:** Every label needs two versions. The Bangla release (D-011) needs a Bangla plain-language layer, not a literal translation.
 
 ## D-004 · Functional colour meaning, large touch targets, no diagnostic labels
@@ -53,7 +53,7 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Origin:** Author
 - **Decision:** Each colour has one meaning: indigo = interactive, mint = proof or truth, amber = dimensions and warnings, cyan = vocabulary. Draggable targets are oversized and snap to key values. The interface never labels its users by diagnosis; it should simply feel right to those who need it.
 - **Alternatives considered:** Decorative colour; standard-size controls; an explicit "accessibility mode" label.
-- **Reasoning:** *Author's reasoning: to be written.*
+- **Reasoning:** The product should help neurodivergent learners, and anyone with sensory or motor difficulties, without telling them that it is "for" them. Students should simply find that it works for them. A consistent colour meaning, large forgiving targets and the absence of labels all serve that aim.
 - **Consequences:** Colour cannot be used decoratively anywhere in the product.
 
 ## D-005 · Implement all seven standard circle theorems
@@ -124,7 +124,8 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Date:** 2026-10-14
 - **Origin:** Author
 - **Decision:** The current version focuses on visual interaction only. Audio narration may come later.
-- **Reasoning:** *Author's reasoning: to be written.*
+- **Reasoning:** "As they already have tutors, they need visual tools more than auditory tutors." (author) The students in the first phase (D-011) already have human explanation from teachers and tutors. What they lack is a way to *see* geometry move.
+- **Open question:** This reasoning fits the first-phase students. Students in the periphery often have **no** tutor, so for the Bangla release (D-011) audio or written explanation may matter more. Revisit this decision before that release.
 - **Consequences:** The product must not be described as offering audio support.
 
 ## D-014 · Name: Geometry Reader, the first of a series of "Readers"
@@ -132,8 +133,8 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Origin:** Author
 - **Decision:** The product is called Geometry Reader. Later topics will follow the same pattern under their own "Reader" names.
 - **Alternatives considered:** NeoGeometry; Geometry Spatial Engine.
-- **Reasoning:** *Author's reasoning: to be written.*
-- **Consequences:** The code should keep each lab self-contained so that new topics can follow the same structure.
+- **Reasoning:** A "Reader" is where you can read everything about one topic, from complete novice to the most advanced level. (author)
+- **Consequences:** The name commits each Reader to full coverage of its topic, from first ideas to advanced work (D-019). The code should keep each lab self-contained so that new topics can follow the same structure.
 
 ## D-015 · Design claims stay hypotheses until tested
 - **Date:** 2026-10-14
@@ -163,3 +164,32 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Decision:** The app header describes what the product is, not an outcome it has not yet shown.
 - **Reasoning:** "Anti-Phobia" claims an untested effect on anxiety (see D-015), and it is the first thing reviewers and investors see.
 - **Consequences:** The aim of reducing maths anxiety remains in RESEARCH.md as hypothesis H2.
+
+## D-019 · Goal: complete coverage of geometry, from first ideas to advanced work
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Geometry Reader will cover the whole of school geometry, from the first ideas (point, line, shape) to O-Level and then college level. It includes the topics missing from the first release: foundations, quadrilaterals, 2D mensuration, Pythagoras, congruence and similarity, transformations, constructions, trigonometry, coordinate geometry and vectors.
+- **Reasoning:** Follows from D-002 and D-014: a Reader is meant to hold everything about its topic.
+- **Consequences:** [CURRICULUM.md](CURRICULUM.md) tracks every topic, its grade, what it builds on, and its status.
+
+## D-020 · Build order: Proof Mode first, then the missing foundations
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** After restructuring the code (D-021), build in this order: (1) Proof Mode for the theorems already in the app; (2) a Foundations lab; (3) a Quadrilateral Family lab; (4) 2D mensuration with formulas derived on screen; (5) the remaining topics in curriculum order.
+- **Alternatives considered:** Foundations first, following the order in which students learn.
+- **Reasoning:** Proof Mode deepens the five labs that already exist, so it improves what reviewers can see today.
+- **Consequences:** The labs move from *showing* that a theorem holds to *explaining why* it holds.
+
+## D-021 · Restructure the code into a shared engine plus one module per topic
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, accepted
+- **Decision:** The single 3,300-line file is split into a shared engine (maths, interaction, feedback, design system), one file per lab, and separate content files (such as the glossary).
+- **Reasoning:** Complete coverage (D-019) means dozens of topics. That is unmanageable in one file, and new topics should reuse the same engine.
+- **Consequences:** Adding a topic means adding one lab file and registering it.
+
+## D-022 · Everyday-object anchors for every shape and property
+- **Date:** 2026-10-14
+- **Origin:** Author
+- **Decision:** Each shape and property is linked to everyday objects that students see and handle, shown visually where possible rather than as a single line of text.
+- **Reasoning:** Students should relate to the idea and think of it the next time they see or work with the object. (author)
+- **Consequences:** Each lab needs a set of everyday examples. The Bangla release should use examples from students' own surroundings.

@@ -3,11 +3,12 @@
 This project was built with substantial help from an AI coding assistant (Claude Code by Anthropic). This file records who did what, so readers can judge the work accurately.
 
 ## What the AI assistant did
-- Wrote all of the application code (kept in the private source repository), working from a written brief.
+- Wrote all of the application code (kept in the private source repository), working from a written brief, and later restructured it into a shared engine plus one module per topic.
 - Drafted the licence text and set up the build tooling: Vite, Tailwind, ESLint, and the GitHub Pages workflow.
 - Ran automated checks: lint, production build, a numerical test of the 3D net unfolding, and a scripted headless-browser pass through all five labs.
 - Drafted the README, this statement, `RESEARCH.md` (research questions, study plan and ethics, from the author's stated goals) and `DECISIONS.md`. Decision-log entries the AI proposed are marked as AI proposals; entries marked "Author's reasoning: to be written" are deliberately left for the author.
 - Set up the split between the private source repository and the public showcase repository, which holds the documents, screenshots and built demo.
+- Drafted `CURRICULUM.md` (the topic list, grade placements and prerequisites) for the author to correct, and wrote up the author's reasoning in `DECISIONS.md` from the author's own statements.
 - Captured the screenshots in `docs/screenshots/` and added the copyright notice to the source files and the built bundle.
 - Edited `STORY.md` from the author's own draft and account. The experiences, observations and arguments are the author's; the AI restructured the wording, added analytical terms, and flagged claims that needed qualifying.
 

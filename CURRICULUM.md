@@ -76,22 +76,22 @@ Each formula is *derived on screen*, never just stated (see D-001).
 
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| F1 | Perimeter | 6 | A6 | Planned | — | 2D Mensuration (new) |
-| F2 | Area of rectangle → parallelogram → triangle → trapezium | 6–7 | F1, D1 | Planned | Planned | 2D Mensuration (new) |
-| F3 | Units of length and area, and converting between them | 6–7 | F2 | Planned | — | 2D Mensuration (new) |
-| F4 | Circumference and area of a circle | 7–8 | E1, F2 | Planned | Planned | 2D Mensuration (new) |
-| F5 | Arc length and sector area | 9 | F4 | Planned | Planned | 2D Mensuration (new) |
-| F6 | Compound shapes | 8 | F2, F4 | Planned | — | 2D Mensuration (new) |
+| F1 | Perimeter | 6 | A6 | Built | — | 7 · Area & Perimeter: Perimeter |
+| F2 | Area of rectangle → parallelogram → triangle → trapezium | 6–7 | F1, D1 | Built | **Built** (visual derivation) | 7 · Area & Perimeter: Area of Four Shapes |
+| F3 | Units of length and area, and converting between them | 6–7 | F2 | Built | — | 7 · Area & Perimeter: Units of Area |
+| F4 | Circumference and area of a circle | 7–8 | E1, F2 | Built | **Built** (visual derivation) | 7 · Area & Perimeter: Circles |
+| F5 | Arc length and sector area | 9 | F4 | Built | **Built** (visual derivation) | 7 · Area & Perimeter: Arcs & Sectors |
+| F6 | Compound shapes | 8 | F2, F4 | Built | — | 7 · Area & Perimeter: Compound Shapes |
 
 ## G · Mensuration in 3D
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
 |---|---|---|---|---|---|---|
-| G1 | Nets of solids | 7–8 | A7 | Built | — | 7 · 3D Spatial Matrix |
-| G2 | Surface area and volume: prism, cylinder | 8–9 | F2, F4, G1 | Built | Planned | 7 · 3D Spatial Matrix |
-| G3 | Surface area and volume: pyramid, cone | 9–10 | G2 | Built | Planned | 7 · 3D Spatial Matrix |
+| G1 | Nets of solids | 7–8 | A7 | Built | — | 8 · 3D Spatial Matrix |
+| G2 | Surface area and volume: prism, cylinder | 8–9 | F2, F4, G1 | Built | Planned | 8 · 3D Spatial Matrix |
+| G3 | Surface area and volume: pyramid, cone | 9–10 | G2 | Built | Planned | 8 · 3D Spatial Matrix |
 | G4 | Sphere and hemisphere | 9–10 | G2 | Planned | — | — |
 | G5 | Units of volume and capacity | 7–8 | G2 | Planned | — | — |
-| G6 | Scale factor: lengths ×k, areas ×k², volumes ×k³ | 9–10 | G2, C8 | Built | Planned | 7 · 3D Spatial Matrix |
+| G6 | Scale factor: lengths ×k, areas ×k², volumes ×k³ | 9–10 | G2, C8 | Built | Planned | 8 · 3D Spatial Matrix |
 
 ## H · Symmetry and transformations
 | ID | Topic | Grade | Builds on | Status | Proof | Lab |
@@ -138,11 +138,11 @@ Counting the 65 topics in sections A–L:
 
 | Status | Topics |
 |---|---|
-| Built | 29 |
+| Built | 35 |
 | Partial | 6 |
-| Planned | 30 |
+| Planned | 24 |
 
-Visual proofs (D-020, D-023): **4 built**: E2 (angle at the centre), E3 (same segment), E4 (semicircle) and E5 (cyclic quadrilateral). Next candidates: E6–E8, the remaining circle theorems, and C2/C3, the triangle angle sum and exterior angle.
+Visual proofs (D-020, D-023): **4 theorem proofs built**: E2 (angle at the centre), E3 (same segment), E4 (semicircle) and E5 (cyclic quadrilateral). **Every 2D mensuration formula is derived on screen** (F2, F4, F5): rectangle, parallelogram, triangle, trapezium, circumference, circle area, arc length and sector area. Next candidates: E6–E8, the remaining circle theorems; C2/C3, the triangle angle sum and exterior angle; and D2, the quadrilateral properties.
 
 ## Syllabus mapping (to verify)
 Add one row per topic once checked against the official documents:

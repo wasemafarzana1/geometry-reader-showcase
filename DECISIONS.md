@@ -242,12 +242,34 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Decision:** Every everyday example is drawn as a small line illustration in one shared style. The geometric idea the object carries (a right angle, a parallel pair, an apex, a turn) is drawn in amber, so the eye goes straight to it. Emoji remain only as a fallback.
 - **Alternatives considered:** Emoji, which look different on every device and cannot highlight the geometry; commissioned illustrations or photographs, for which there is no budget.
 - **Reasoning:** Illustrations look the same on every phone, match the app's design, and point at the maths in the object rather than just naming it.
-- **Consequences:** 115 drawings live in `src/content/illustrations.jsx`. New examples need a new drawing. For the Bangla version, objects from students' own surroundings can be added in the same style.
+- **Consequences:** 127 drawings live in `src/content/illustrations.jsx` (115 at first, 12 more for Area & Perimeter). New examples need a new drawing. For the Bangla version, objects from students' own surroundings can be added in the same style.
 
 ## D-029 · Quadrilateral Family lab: keep the rules, change the shape
 - **Date:** 2026-10-14
-- **Origin:** AI proposal, built at the author's request; one point pending author review
+- **Origin:** AI proposal, built at the author's request; kite definition confirmed by the author
 - **Decision:** The learner chooses a family's rules (for example "all four corners stay at 90°") and drags the corners. The shape keeps those rules however it is stretched, so the learner sees which properties always come with the rules and which belong to one drawing only. A family tree lights up every family the shape belongs to; tapping a box gives the shape that family's rules. A side-by-side table lists what each family always has, measured by the app on a typical example of each family rather than typed in.
 - **Reasoning:** A fixed diagram shows one shape, so "every square is a rectangle" has to be taken on trust. Stretching a rectangle until it *becomes* a square, while it never stops obeying the rectangle rules, shows the family relationship happening (D-001). That this helps learners accept the inclusive families is a hypothesis to test (H4 in [RESEARCH.md](RESEARCH.md)). Measuring the table from real shapes means the text cannot contradict the figure.
-- **Pending author review:** **Is a rhombus a kite?** The lab follows the common inclusive definition (two pairs of equal adjacent sides), so a rhombus and a square also count as kites, and the tree joins Kite to Rhombus. Some books exclude them. Confirm which your students are taught.
+- **Kite definition (author):** Every rhombus is a kite, but not every kite is a rhombus. A kite is a quadrilateral with two pairs of equal adjacent sides; a rhombus has all four sides equal, so it qualifies. The tree therefore joins Kite to Rhombus, and a square counts as a kite too. A kite's line of symmetry is the diagonal joining the corners where the equal sides meet. It is not always the longer diagonal.
 - **Consequences:** Topics D1–D3 are built. The lab is placed after Polygon Factory, so Circle Laws and 3D Spatial Matrix become Labs 6 and 7. Visual proofs of the family properties (for example, why a parallelogram's opposite angles are equal) are still to come.
+
+## D-030 · Area & Perimeter lab: every formula is watched being built
+- **Date:** 2026-10-14
+- **Origin:** AI proposal, built at the author's request ("go on with 2D mensuration"); open points listed for author review
+- **Decision:** One lab with six stations (F1–F6). No formula is stated without first being built on the learner's own shape:
+  - **Perimeter:** the outline is cut at the corners and laid flat along a ruler.
+  - **Rectangle:** unit squares fill one row, then the rows stack: l × w.
+  - **Parallelogram:** a triangle is cut off and slid across, making a rectangle: b × h.
+  - **Triangle and trapezium:** an identical copy is spun 180°, making a parallelogram, so each shape is half of it: ½bh and ½(a + b)h (D-027).
+  - **Units:** a square unit is filled with smaller squares, row by row, so the area factor is the length factor squared.
+  - **Circle:** rolled one turn to show C = πd; then cut into slices and laid in a row that approaches a rectangle πr by r, so A = πr².
+  - **Arc and sector:** shown as the fraction θ/360 of the whole circle.
+  - **Compound shapes:** worked three ways, all giving the same area.
+- **Reasoning:** D-001 (formulas derived, not stated) and D-023 (visual proofs). The chain rectangle → parallelogram → triangle → trapezium means each formula rests on the one before it.
+- **Choices the AI made, for author review:**
+  1. **Generic units.** Figures use "units" and "u²" rather than cm or m, so one figure works for any unit. The Units station uses real units.
+  2. **Rounding.** Calculations use the exact value of π; answers are shown to 2 decimal places. Perimeters with slanted sides are shown to 1 decimal place.
+  3. **Whole-number sizes.** Most shapes snap to whole units, so that squares can be counted. The circle radius moves in quarter units.
+  4. **Local units.** The Units station mentions the decimal, a land unit used in Bangladesh (1 decimal = 1/100 acre, about 40.5 m²), as an everyday example only. Should the Bangla version teach local units (decimal, katha, bigha) properly?
+  5. **Parallelogram lean.** The cut-and-slide proof needs the top to lean by no more than the base length, so the lab stops the lean there. A steeper parallelogram needs several cuts; that case is not shown yet.
+- **Consequences:** Topics F1–F6 are built. The lab is placed before the 3D Spatial Matrix, which uses these formulas, so the 3D lab becomes Lab 8. The station layout is now a shared engine part (`StationLab`), used by Foundations and this lab.
+

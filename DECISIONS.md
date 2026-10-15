@@ -277,7 +277,7 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 ## D-031 · Build every remaining O-Level topic
 - **Date:** 2026-10-15
 - **Origin:** Author ("build all of the next"); labs built by the AI assistant; choices below are for author review
-- **Decision:** Every remaining topic in sections A–L of the curriculum map is now built, in seven new labs and three additions to existing labs:
+- **Decision:** Every remaining topic in sections A–L of the curriculum map is now built, in eight new labs and one addition to an existing lab:
   - **Triangles:** classify; isosceles and equilateral; the triangle inequality; Pythagoras; congruence; similarity (C1, C4–C8).
   - **Circle Basics:** parts of a circle; chords (E1, E9).
   - **Volume & Spheres:** units of volume and capacity; sphere and hemisphere (G4, G5).

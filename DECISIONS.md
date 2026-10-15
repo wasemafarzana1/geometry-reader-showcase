@@ -242,7 +242,7 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
 - **Decision:** Every everyday example is drawn as a small line illustration in one shared style. The geometric idea the object carries (a right angle, a parallel pair, an apex, a turn) is drawn in amber, so the eye goes straight to it. Emoji remain only as a fallback.
 - **Alternatives considered:** Emoji, which look different on every device and cannot highlight the geometry; commissioned illustrations or photographs, for which there is no budget.
 - **Reasoning:** Illustrations look the same on every phone, match the app's design, and point at the maths in the object rather than just naming it.
-- **Consequences:** 127 drawings live in `src/content/illustrations.jsx` (115 at first, 12 more for Area & Perimeter). New examples need a new drawing. For the Bangla version, objects from students' own surroundings can be added in the same style.
+- **Consequences:** 144 drawings live in `src/content/illustrations.jsx` (115 at first, then 12 for Area & Perimeter and 17 for the labs in D-031). New examples need a new drawing. For the Bangla version, objects from students' own surroundings can be added in the same style.
 
 ## D-029 · Quadrilateral Family lab: keep the rules, change the shape
 - **Date:** 2026-10-14
@@ -273,3 +273,30 @@ Rejected AI proposals belong here too. They show judgement as clearly as accepte
   5. **Parallelogram lean.** The cut-and-slide proof needs the top to lean by no more than the base length, so the lab stops the lean there. A steeper parallelogram needs several cuts; that case is not shown yet.
 - **Consequences:** Topics F1–F6 are built. The lab is placed before the 3D Spatial Matrix, which uses these formulas, so the 3D lab becomes Lab 8. The station layout is now a shared engine part (`StationLab`), used by Foundations and this lab.
 
+
+## D-031 · Build every remaining O-Level topic
+- **Date:** 2026-10-15
+- **Origin:** Author ("build all of the next"); labs built by the AI assistant; choices below are for author review
+- **Decision:** Every remaining topic in sections A–L of the curriculum map is now built, in seven new labs and three additions to existing labs:
+  - **Triangles:** classify; isosceles and equilateral; the triangle inequality; Pythagoras; congruence; similarity (C1, C4–C8).
+  - **Circle Basics:** parts of a circle; chords (E1, E9).
+  - **Volume & Spheres:** units of volume and capacity; sphere and hemisphere (G4, G5).
+  - **Symmetry & Transformations:** symmetry; reflect, rotate, translate; enlargement; combine and undo; tessellation (H1–H4, D7).
+  - **Constructions & Loci:** constructions; scale drawings and maps; loci (I1–I3).
+  - **Coordinate Geometry:** plotting; distance, gradient and midpoint; y = mx + c; parallel and perpendicular (J1–J4).
+  - **Trigonometry:** SOH CAH TOA; elevation and depression; bearings; sine and cosine rules; trigonometry in 3D (K1–K4, B5).
+  - **Vectors:** basics; proofs with vectors (L1, L2).
+  - **Additions:** a "Why 360°?" proof in the Quadrilateral Family (D4).
+- **Reasoning:** The aim is complete coverage of school geometry (D-002, D-019). Each topic keeps the same principles: drag to explore (D-001), watch why (D-023), paired vocabulary (D-003), everyday objects (D-022).
+- **Choices the AI made, for author review:**
+  1. **Lab order follows the curriculum sections.** The nav now has 16 labs. Lab numbers are taken from each lab's place in the nav, so they no longer need renumbering by hand.
+  2. **Circle Basics is a separate lab** rather than more theorems inside Circle Laws.
+  3. **The triangle angle sum and exterior angle (C2, C3) stay in Vector Railways**, where they follow from parallel lines.
+  4. **Congruence:** choosing SSA always loads an example where two different triangles fit the facts, because that is the case that shows why SSA fails.
+  5. **Bearings sit in the Trigonometry lab**, with east and north components worked out by sin and cos.
+  6. **Tessellation sits in the Transformations lab**, because any triangle or quadrilateral tiles the plane by half-turns.
+  7. **The map is fictional** (Town A, Village B, Port C), so no real place is named.
+  8. **Vector proofs:** the midpoint theorem and the diagonals of a parallelogram. Other proofs may matter more for your students.
+  9. **Sphere surface area** uses Archimedes' band argument with live numbers; it is a visual explanation, not a full limit proof.
+- **Status of the claim "built":** each topic has an interactive lab. This does not mean it has been checked against the official Cambridge O Level or NCTB documents (see [CURRICULUM.md](CURRICULUM.md)), or tested with students (see [RESEARCH.md](RESEARCH.md)).
+- **Consequences:** All 65 topics in sections A–L are built; 21 have a visual proof or derivation. Visual proofs remain to be built for 16 topics (listed in the curriculum map). Next: check the syllabus mapping, then college-level topics (section M).
